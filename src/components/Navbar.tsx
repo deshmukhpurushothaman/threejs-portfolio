@@ -3,8 +3,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { styles } from '../styles/styles'
 import { navLinks } from '../constants'
-import { menu, close } from '../assets'
-import Logo from '../assets/mylogo.png'
+import { menu, close } from '../../public/assets'
+import Logo from '../../public/assets/mylogo.png'
 
 const Navbar = () => {
   const [active, setActive] = useState("")
