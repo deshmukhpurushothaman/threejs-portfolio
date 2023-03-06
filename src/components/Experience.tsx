@@ -16,7 +16,7 @@ const ExperienceCard = ({ experience }: any) => (
     iconStyle={{ background: experience.iconBg }}
     icon={
       <div className='flex justify-center items-center w-full h-full'>
-        <Image src={experience.icon} alt={experience.company_name} className='w-[60%] h-[60%] object-contain' />
+        <Image src={experience.icon} alt={experience.company_name} className='w-[60%] h-[60%] object-contain rounded-2xl' width={30} height={30} />
       </div>
     }
   >
