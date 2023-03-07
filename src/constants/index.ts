@@ -42,28 +42,28 @@ const services = [
         icon: web,
     },
     {
-        title: "React Native Developer",
+        title: "Mobile Application Developer",
         icon: mobile,
     },
     {
         title: "Backend Developer",
         icon: backend,
     },
-    {
-        title: "Content Creator",
-        icon: creator,
-    },
+    // {
+    //     title: "Content Creator",
+    //     icon: creator,
+    // },
 ];
 
 const technologies = [
-    {
-        name: "HTML 5",
-        icon: '/assets/tech/html.png',
-    },
-    {
-        name: "CSS 3",
-        icon: '/assets/tech/css.png',
-    },
+    // {
+    //     name: "HTML 5",
+    //     icon: '/assets/tech/html.png',
+    // },
+    // {
+    //     name: "CSS 3",
+    //     icon: '/assets/tech/css.png',
+    // },
     {
         name: "JavaScript",
         icon: '/assets/tech/javascript.png',
@@ -77,9 +77,13 @@ const technologies = [
         icon: '/assets/tech/reactjs.png',
     },
     {
-        name: "Redux Toolkit",
-        icon: '/assets/tech/redux.png',
+        name: "Next JS",
+        icon: '/assets/tech/nextjs.png',
     },
+    // {
+    //     name: "Redux Toolkit",
+    //     icon: '/assets/tech/redux.png',
+    // },
     {
         name: "Tailwind CSS",
         icon: '/assets/tech/tailwind.png',
@@ -100,14 +104,38 @@ const technologies = [
         name: "git",
         icon: '/assets/tech/git.png',
     },
-    {
-        name: "figma",
-        icon: '/assets/tech/figma.png',
-    },
+    // {
+    //     name: "github",
+    //     icon: '/assets/tech/github.png',
+    // },
     {
         name: "docker",
         icon: '/assets/tech/docker.png',
     },
+    // {
+    //     name: "Automation Anywhere",
+    //     icon: '/assets/tech/aa.jpg',
+    // },
+    {
+        name: "Go",
+        icon: '/assets/tech/go.png',
+    },
+    {
+        name: "flutter",
+        icon: '/assets/tech/flutter.jpg',
+    },
+    // {
+    //     name: "mocha",
+    //     icon: '/assets/tech/mocha.svg',
+    // },
+    {
+        name: "nestjs",
+        icon: '/assets/tech/nestjs.svg',
+    },
+    // {
+    //     name: "SASS",
+    //     icon: '/assets/tech/sass.png',
+    // },
 ];
 
 const experiences = [
