@@ -5,6 +5,7 @@ import { styles } from '../styles/styles'
 import { EarthCanvas } from './canvas'
 import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
+import { toast } from 'react-toastify'
 
 const Contact = () => {
   const formRef = useRef()
@@ -15,8 +16,56 @@ const Contact = () => {
   })
   const [loading, setLoading] = useState(false)
 
-  const handleChange = () => { }
-  const handleSubmit = () => { }
+  const handleChange = (e: any) => {
+    const { target } = e;
+    const { name, value } = target;
+
+    setForm({
+      ...form,
+      [name]: value,
+    });
+  }
+  const handleSubmit = async (e: any) => {
+    try {
+      e.preventDefault();
+      setLoading(true)
+
+      emailjs
+        .send(
+          process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
+          process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
+          {
+            from_name: form.name,
+            to_name: "Deshmukh",
+            from_email: form.email,
+            to_email: process.env.EMAIL,
+            message: form.message,
+          },
+          process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+        )
+        .then(
+          () => {
+            setLoading(false);
+            alert("Thank you. I will get back to you as soon as possible.");
+            // toast.info("Thank you. I will get back to you as soon as possible.")
+            setForm({
+              name: "",
+              email: "",
+              message: "",
+            });
+          },
+          (error) => {
+            setLoading(false);
+            // console.error(error);
+            // toast.error("Ahh, something went wrong. Please try again.")
+            alert("Ahh, something went wrong. Please try again.");
+          }
+        );
+    } catch (error) {
+      console.log(error)
+      alert("Something went wrong. Please try again later")
+    }
+  }
   return (
     <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
       <motion.div
