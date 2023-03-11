@@ -22,14 +22,14 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
       >
         <div className='relative w-full h-[230px]'>
           <Image src={image} alt={name} className='w-full h-full object-cover rounded-2xl' />
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+          {/* <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
             <div
               onClick={() => window.open(source_code_link, '_blank')}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
               <Image src={github} alt="github" className='w-1/2 h-1/2 object-contain' />
             </div>
-          </div>
+          </div> */}
         </div>
         <div className='mt-5'>
           <h3 className='text-white font-bold text-[24px]'>{name}</h3>
@@ -59,9 +59,7 @@ const Works = () => {
           variants={fadeIn('', '', 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading[30px]'
         >
-          Following project showcases my skills MERN stack techs. Project
-          is linked to gihub repository and live deployment link to give
-          you a demo. It reflects my ability to solve complex problems,
+          Following project showcases my skills MERN stack techs. It reflects my ability to solve complex problems,
           different technologies and manage projects.
         </motion.p>
       </div>

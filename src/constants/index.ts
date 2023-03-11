@@ -19,6 +19,21 @@ import {
     jobit,
     tripguide,
     threejs,
+    aa,
+    birthday,
+    certificate,
+    elearning,
+    encryptus,
+    petAdoption,
+    quiz,
+    tribeone,
+    campusvita,
+    logistics,
+    antaha,
+    ecommerce,
+    questionPaper,
+    systemPerformance,
+    resultAnalysis,
 } from "../../public/assets";
 
 export const navLinks = [
@@ -237,66 +252,339 @@ const testimonials = [
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "Placement Filtration",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "Software bot built using Automation Anywhere v11.x to filter college students for different companies who are reaching for campus interview as per the Job description. These eligible students are notifed through email.",
         tags: [
             {
-                name: "react",
+                name: "rpa",
                 color: "blue-text-gradient",
             },
             {
-                name: "mongodb",
+                name: "automationanywhere",
                 color: "green-text-gradient",
             },
             {
-                name: "tailwind",
+                name: "collegecampus",
                 color: "pink-text-gradient",
             },
         ],
-        image: carrent,
+        image: aa,
         source_code_link: "https://github.com/",
     },
     {
-        name: "Job IT",
+        name: "Monitoring System Performance",
         description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+            "Software bot that keeps monitoring the system performance and usage of RAM and CPU.It notifies network administrator through email if a threshold is reached.",
         tags: [
             {
-                name: "react",
+                name: "rpa",
                 color: "blue-text-gradient",
             },
             {
-                name: "restapi",
+                name: "automationanywhere",
                 color: "green-text-gradient",
             },
             {
-                name: "scss",
+                name: "network",
                 color: "pink-text-gradient",
             },
         ],
-        image: jobit,
+        image: systemPerformance,
         source_code_link: "https://github.com/",
     },
     {
-        name: "Trip Guide",
+        name: "Automated Question Paper",
         description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+            "Software bot that auto generates a question paper by having a list of possible questions has an input. No staff will know what question will be coming up.",
         tags: [
             {
-                name: "nextjs",
+                name: "rpa",
                 color: "blue-text-gradient",
             },
             {
-                name: "supabase",
+                name: "automationanywhere",
                 color: "green-text-gradient",
             },
             {
-                name: "css",
+                name: "exam",
                 color: "pink-text-gradient",
             },
         ],
-        image: tripguide,
+        image: questionPaper,
+        source_code_link: "https://github.com/",
+    },
+    {
+        name: "Result Analysis",
+        description:
+            "Software bot that analysis the exam results of a class and generates a report with all necessary details. It will give class percentage, subject wise percentage, ranks etc.",
+        tags: [
+            {
+                name: "rpa",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "automationanywhere",
+                color: "green-text-gradient",
+            },
+            {
+                name: "examresult",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: resultAnalysis,
+        source_code_link: "https://github.com/",
+    },
+    {
+        name: "Greetings",
+        description:
+            "Software bot that wishes employees on their birthday, anniversary etc. Never miss to wish any employee in your organization. Even a small gesture makes people happy.",
+        tags: [
+            {
+                name: "rpa",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "automationanywhere",
+                color: "green-text-gradient",
+            },
+            {
+                name: "wishes",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: birthday,
+        source_code_link: "https://github.com/",
+    },
+    {
+        name: "Automated E-Certificate Generation",
+        description:
+            "Software bot generates E-Certificates for all participants who participated in an event.This process much fastr. This is a paper free process and reduces human effort.",
+        tags: [
+            {
+                name: "rpa",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "automationanywhere",
+                color: "green-text-gradient",
+            },
+            {
+                name: "e-certificate",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: certificate,
+        source_code_link: "https://github.com/",
+    },
+    {
+        name: "RPA Ocean",
+        description:
+            "A MERN Stack application which brings all RPA Developers and RPA Community to share their ideas and knowledge. Once place to connect with many RPA Developers and brign in more ideas.",
+        tags: [
+            {
+                name: "rpa",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "automationanywhere",
+                color: "green-text-gradient",
+            },
+            {
+                name: "community",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: aa,
+        source_code_link: "https://github.com/",
+    },
+    {
+        name: "Campusvita",
+        description:
+            "A mobile application which is for college students and job seekers. College students can prepare for interviews in various domains. Students will get notifications of latest openings.",
+        tags: [
+            {
+                name: "flutter",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "students",
+                color: "green-text-gradient",
+            },
+            {
+                name: "job",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: campusvita,
+        source_code_link: "https://github.com/",
+    },
+    {
+        name: "Logistics",
+        description:
+            "A mobile application for godown and warehouses. People can keep track of goods that are in and out of godown. Simply update the status of goods delivery details.",
+        tags: [
+            {
+                name: "flutter",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "warehouses",
+                color: "green-text-gradient",
+            },
+            {
+                name: "logistics",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: logistics,
+        source_code_link: "https://github.com/",
+    },
+    {
+        name: "Quiz App",
+        description:
+            "MERN Stack application. Admin will post a chapter of MCQ quiz. Users can attempt the quiz any number of times. They can only see their final score but not the correct answers. There will be a leaderboard.",
+        tags: [
+            {
+                name: "mern",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "quiz",
+                color: "green-text-gradient",
+            },
+            {
+                name: "knowledge",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: quiz,
+        source_code_link: "https://github.com/",
+    },
+    {
+        name: "Pet Adoption",
+        description:
+            "MERN Stack application where users can post the images of the pets and details along with it. Whoever wants to adopt a pet can check all the posts and reach out to the person. Adoption is completely free of cost and more user-friendly. There are also additional features like likes, comments etc are available.",
+        tags: [
+            {
+                name: "mern",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "adoption",
+                color: "green-text-gradient",
+            },
+            {
+                name: "saveanimals",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: petAdoption,
+        source_code_link: "https://github.com/",
+    },
+    {
+        name: "E-learning",
+        description:
+            "E-learning platform for college students mostly. Users can subscribe courses for free and go through the chapters. Chapters are embedded videos. Once they complete the video, they have to take a quiz. If they score good, next chapter will unlock. Else they have to re-attempt.",
+        tags: [
+            {
+                name: "mern",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "elearning",
+                color: "green-text-gradient",
+            },
+            {
+                name: "gainskills",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: elearning,
+        source_code_link: "https://github.com/",
+    },
+    {
+        name: "E-Commerce",
+        description:
+            "It is an harwares selling platform. Hardware shops can signup and list their products for sale. People can order the products and pay via payment gateway. COD is not available. Delivery is taken care by the shop who listed the product.",
+        tags: [
+            {
+                name: "mern",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "ecommerce",
+                color: "green-text-gradient",
+            },
+            {
+                name: "hardwares",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: ecommerce,
+        source_code_link: "https://github.com/",
+    },
+    // {
+    //     name: "Antaha",
+    //     description:
+    //         "Notify users what's new with the product in a much better and faster way. This is a product updates application. This is visible directly in the client's website. Just add a script to connect.",
+    //     tags: [
+    //         {
+    //             name: "mern",
+    //             color: "blue-text-gradient",
+    //         },
+    //         {
+    //             name: "productupdates",
+    //             color: "green-text-gradient",
+    //         },
+    //         {
+    //             name: "notification",
+    //             color: "pink-text-gradient",
+    //         },
+    //     ],
+    //     image: antaha,
+    //     source_code_link: "https://github.com/",
+    // },
+    {
+        name: "Tribeone NFT Marketplace",
+        description:
+            "NFT Markeplace for people to buy and sell NFT's. They can connect via Metamask and use HAKA tokens to sell and buy NFT's. More user friendly and has a better user experience.",
+        tags: [
+            {
+                name: "web3.0",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "blockchain",
+                color: "green-text-gradient",
+            },
+            {
+                name: "nft",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: tribeone,
+        source_code_link: "https://github.com/",
+    },
+    {
+        name: "Encryptus",
+        description:
+            "More interested in trading crypto? You are at the right place. It is a crypto exchange marketplace for users to buy and sell crypto using fiat currencies like USD, AED etc. Transactions are more secure. It has 3FA enabled for all transactions.",
+        tags: [
+            {
+                name: "cryptotrading",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "blockchain",
+                color: "green-text-gradient",
+            },
+            {
+                name: "fiat<>crypto",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: encryptus,
         source_code_link: "https://github.com/",
     },
 ];
