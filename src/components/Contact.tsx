@@ -46,19 +46,21 @@ const Contact = () => {
         .then(
           () => {
             setLoading(false);
-            alert("Thank you. I will get back to you as soon as possible.");
-            // toast.info("Thank you. I will get back to you as soon as possible.")
+            // alert("Thank you. I will get back to you as soon as possible.");
+            toast.info("Thank you. I will get back to you as soon as possible.")
             setForm({
               name: "",
               email: "",
               message: "",
             });
+            return;
           },
           (error) => {
             setLoading(false);
             // console.error(error);
-            // toast.error("Ahh, something went wrong. Please try again.")
-            alert("Ahh, something went wrong. Please try again.");
+            toast.error("Ahh, something went wrong. Please try again.")
+            return
+            // alert("Ahh, something went wrong. Please try again.");
           }
         );
     } catch (error) {
